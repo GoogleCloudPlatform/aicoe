@@ -1,0 +1,38 @@
+{
+    "type": "record",
+    "name": "Avro",
+    "fields": [
+      {
+        "name": "timestamp",
+        "type": "string"
+      },
+      {
+        "name": "endpoint",
+        "type": "string"
+      },
+      {
+        "name": "podcount",
+        "type": "int"
+      },
+      {
+        "name": "container_count",
+        "type": "int"
+      },
+      {
+        "name": "tls_enabled",
+        "type": "int"
+      },
+      {
+        "name": "errorcode",
+        "type": "int"
+      },
+      {
+        "name": "latency",
+        "type": "float"
+      },
+      {
+        "name": "is_timeout",
+        "type": "int"
+      }
+    ]
+  }

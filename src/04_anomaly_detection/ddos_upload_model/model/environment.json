@@ -1,0 +1,1 @@
+{"container_uri": "us-docker.pkg.dev/vertex-ai/automl-tabular/prediction-server:20221020_1325_RC00", "tensorflow": "2.8.0", "struct2tensor": "0.39.0", "tensorflow-addons": "0.16.1"}

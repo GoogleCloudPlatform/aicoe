@@ -1,0 +1,4 @@
+google-cloud-storage==1.44.0
+google-cloud-aiplatform==1.28.0
+kfp==1.8.22
+google-cloud-pipeline-components==1.0.28

@@ -1,0 +1,444 @@
+#  Copyright 2023 Google LLC
+
+#  Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at
+
+#       https://www.apache.org/licenses/LICENSE-2.0
+
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+
+type: object
+properties:
+  timestamp:
+    nullable: true
+    type: string
+  entity_type_flows:
+    nullable: true
+    type: string
+  c0:
+    nullable: true
+    type: string
+  flow_id:
+    nullable: true
+    type: string
+  src_ip:
+    nullable: true
+    type: string
+  src_port:
+    nullable: true
+    type: string
+  dst_ip:
+    nullable: true
+    type: string
+  dst_port:
+    nullable: true
+    type: string
+  protocol:
+    nullable: true
+    type: string
+  flow_duration:
+    nullable: true
+    type: string
+  tot_fwd_pkts:
+    nullable: true
+    type: string
+  tot_bwd_pkts:
+    nullable: true
+    type: string
+  totlen_fwd_pkts:
+    nullable: true
+    type: number
+  totlen_bwd_pkts:
+    nullable: true
+    type: number
+  fwd_pkt_len_max:
+    nullable: true
+    type: number
+  fwd_pkt_len_min:
+    nullable: true
+    type: number
+  fwd_pkt_len_mean:
+    nullable: true
+    type: number
+  fwd_pkt_len_std:
+    nullable: true
+    type: number
+  bwd_pkt_len_max:
+    nullable: true
+    type: number
+  bwd_pkt_len_min:
+    nullable: true
+    type: number
+  bwd_pkt_len_mean:
+    nullable: true
+    type: number
+  bwd_pkt_len_std:
+    nullable: true
+    type: number
+  flow_byts_s:
+    nullable: true
+    type: number
+  flow_pkts_s:
+    nullable: true
+    type: number
+  flow_iat_mean:
+    nullable: true
+    type: number
+  flow_iat_std:
+    nullable: true
+    type: number
+  flow_iat_max:
+    nullable: true
+    type: number
+  flow_iat_min:
+    nullable: true
+    type: number
+  fwd_iat_tot:
+    nullable: true
+    type: number
+  fwd_iat_mean:
+    nullable: true
+    type: number
+  fwd_iat_std:
+    nullable: true
+    type: number
+  fwd_iat_max:
+    nullable: true
+    type: number
+  fwd_iat_min:
+    nullable: true
+    type: number
+  bwd_iat_tot:
+    nullable: true
+    type: number
+  bwd_iat_mean:
+    nullable: true
+    type: number
+  bwd_iat_std:
+    nullable: true
+    type: number
+  bwd_iat_max:
+    nullable: true
+    type: number
+  bwd_iat_min:
+    nullable: true
+    type: number
+  fwd_psh_flags:
+    nullable: true
+    type: string
+  bwd_psh_flags:
+    nullable: true
+    type: string
+  fwd_urg_flags:
+    nullable: true
+    type: string
+  bwd_urg_flags:
+    nullable: true
+    type: string
+  fwd_header_len:
+    nullable: true
+    type: string
+  bwd_header_len:
+    nullable: true
+    type: string
+  fwd_pkts_s:
+    nullable: true
+    type: number
+  bwd_pkts_s:
+    nullable: true
+    type: number
+  pkt_len_min:
+    nullable: true
+    type: number
+  pkt_len_max:
+    nullable: true
+    type: number
+  pkt_len_mean:
+    nullable: true
+    type: number
+  pkt_len_std:
+    nullable: true
+    type: number
+  pkt_len_var:
+    nullable: true
+    type: number
+  fin_flag_cnt:
+    nullable: true
+    type: string
+  syn_flag_cnt:
+    nullable: true
+    type: string
+  rst_flag_cnt:
+    nullable: true
+    type: string
+  psh_flag_cnt:
+    nullable: true
+    type: string
+  ack_flag_cnt:
+    nullable: true
+    type: string
+  urg_flag_cnt:
+    nullable: true
+    type: string
+  cwe_flag_cnt:
+    nullable: true
+    type: string
+  ece_flag_cnt:
+    nullable: true
+    type: string
+  down_up_ratio:
+    nullable: true
+    type: number
+  pkt_size_avg:
+    nullable: true
+    type: number
+  fwd_seg_size_avg:
+    nullable: true
+    type: number
+  bwd_seg_size_avg:
+    nullable: true
+    type: number
+  fwd_byts_b_avg:
+    nullable: true
+    type: string
+  fwd_pkts_b_avg:
+    nullable: true
+    type: string
+  fwd_blk_rate_avg:
+    nullable: true
+    type: string
+  bwd_byts_b_avg:
+    nullable: true
+    type: string
+  bwd_pkts_b_avg:
+    nullable: true
+    type: string
+  bwd_blk_rate_avg:
+    nullable: true
+    type: string
+  subflow_fwd_pkts:
+    nullable: true
+    type: string
+  subflow_fwd_byts:
+    nullable: true
+    type: string
+  subflow_bwd_pkts:
+    nullable: true
+    type: string
+  subflow_bwd_byts:
+    nullable: true
+    type: string
+  init_fwd_win_byts:
+    nullable: true
+    type: string
+  init_bwd_win_byts:
+    nullable: true
+    type: string
+  fwd_act_data_pkts:
+    nullable: true
+    type: string
+  fwd_seg_size_min:
+    nullable: true
+    type: string
+  active_mean:
+    nullable: true
+    type: number
+  active_std:
+    nullable: true
+    type: number
+  active_max:
+    nullable: true
+    type: number
+  active_min:
+    nullable: true
+    type: number
+  idle_mean:
+    nullable: true
+    type: number
+  idle_std:
+    nullable: true
+    type: number
+  idle_max:
+    nullable: true
+    type: number
+  idle_min:
+    nullable: true
+    type: number
+required:
+- timestamp
+- entity_type_flows
+- c0
+- flow_id
+- src_ip
+- src_port
+- dst_ip
+- dst_port
+- protocol
+- flow_duration
+- tot_fwd_pkts
+- tot_bwd_pkts
+- totlen_fwd_pkts
+- totlen_bwd_pkts
+- fwd_pkt_len_max
+- fwd_pkt_len_min
+- fwd_pkt_len_mean
+- fwd_pkt_len_std
+- bwd_pkt_len_max
+- bwd_pkt_len_min
+- bwd_pkt_len_mean
+- bwd_pkt_len_std
+- flow_byts_s
+- flow_pkts_s
+- flow_iat_mean
+- flow_iat_std
+- flow_iat_max
+- flow_iat_min
+- fwd_iat_tot
+- fwd_iat_mean
+- fwd_iat_std
+- fwd_iat_max
+- fwd_iat_min
+- bwd_iat_tot
+- bwd_iat_mean
+- bwd_iat_std
+- bwd_iat_max
+- bwd_iat_min
+- fwd_psh_flags
+- bwd_psh_flags
+- fwd_urg_flags
+- bwd_urg_flags
+- fwd_header_len
+- bwd_header_len
+- fwd_pkts_s
+- bwd_pkts_s
+- pkt_len_min
+- pkt_len_max
+- pkt_len_mean
+- pkt_len_std
+- pkt_len_var
+- fin_flag_cnt
+- syn_flag_cnt
+- rst_flag_cnt
+- psh_flag_cnt
+- ack_flag_cnt
+- urg_flag_cnt
+- cwe_flag_cnt
+- ece_flag_cnt
+- down_up_ratio
+- pkt_size_avg
+- fwd_seg_size_avg
+- bwd_seg_size_avg
+- fwd_byts_b_avg
+- fwd_pkts_b_avg
+- fwd_blk_rate_avg
+- bwd_byts_b_avg
+- bwd_pkts_b_avg
+- bwd_blk_rate_avg
+- subflow_fwd_pkts
+- subflow_fwd_byts
+- subflow_bwd_pkts
+- subflow_bwd_byts
+- init_fwd_win_byts
+- init_bwd_win_byts
+- fwd_act_data_pkts
+- fwd_seg_size_min
+- active_mean
+- active_std
+- active_max
+- active_min
+- idle_mean
+- idle_std
+- idle_max
+- idle_min
+nullable: true
+example:
+  timestamp: '2022-12-27 13:28:54.173119+00:00'
+  entity_type_flows: 8.0.6.4-8.6.0.1-0-0-0
+  c0: '3227120.0'
+  flow_id: 8.0.6.4-8.6.0.1-0-0-0
+  src_ip: 172.31.69.25
+  src_port: '51620.0'
+  dst_ip: 172.31.0.2
+  dst_port: '443.0'
+  protocol: '6'
+  flow_duration: '37256.0'
+  tot_fwd_pkts: '2.0'
+  tot_bwd_pkts: '1.0'
+  totlen_fwd_pkts: 48.0
+  totlen_bwd_pkts: 132.0
+  fwd_pkt_len_max: 44.0
+  fwd_pkt_len_min: 0.0
+  fwd_pkt_len_mean: 40.0
+  fwd_pkt_len_std: 0.0
+  bwd_pkt_len_max: 109.0
+  bwd_pkt_len_min: 0.0
+  bwd_pkt_len_mean: 78.0
+  bwd_pkt_len_std: 0.0
+  flow_byts_s: 908.74019460757
+  flow_pkts_s: 93.78003891871614
+  flow_iat_mean: 17074.0
+  flow_iat_std: 374.0594872476837
+  flow_iat_max: 30240.0
+  flow_iat_min: 41.0
+  fwd_iat_tot: 3274.0
+  fwd_iat_mean: 1951.0
+  fwd_iat_std: 0.0
+  fwd_iat_max: 3129.0
+  fwd_iat_min: 21.0
+  bwd_iat_tot: 0.0
+  bwd_iat_mean: 0.0
+  bwd_iat_std: 0.0
+  bwd_iat_max: 0.0
+  bwd_iat_min: 0.0
+  fwd_psh_flags: '0'
+  bwd_psh_flags: '0'
+  fwd_urg_flags: '0'
+  bwd_urg_flags: '0'
+  fwd_header_len: '40.0'
+  bwd_header_len: '20.0'
+  fwd_pkts_s: 38.71916986099818
+  bwd_pkts_s: 6.159683638648319
+  pkt_len_min: 0.0
+  pkt_len_max: 112.0
+  pkt_len_mean: 58.71428571428572
+  pkt_len_std: 39.259818304894544
+  pkt_len_var: 1541.3333333333337
+  fin_flag_cnt: '0'
+  syn_flag_cnt: '0'
+  rst_flag_cnt: '0'
+  psh_flag_cnt: '0'
+  ack_flag_cnt: '0'
+  urg_flag_cnt: '0'
+  cwe_flag_cnt: '0'
+  ece_flag_cnt: '0'
+  down_up_ratio: 1.0
+  pkt_size_avg: 80.0
+  fwd_seg_size_avg: 40.0
+  bwd_seg_size_avg: 78.0
+  fwd_byts_b_avg: '0'
+  fwd_pkts_b_avg: '0'
+  fwd_blk_rate_avg: '0'
+  bwd_byts_b_avg: '0'
+  bwd_pkts_b_avg: '0'
+  bwd_blk_rate_avg: '0'
+  subflow_fwd_pkts: '2.0'
+  subflow_fwd_byts: '48.0'
+  subflow_bwd_pkts: '1.0'
+  subflow_bwd_byts: '132.0'
+  init_fwd_win_byts: '110.0'
+  init_bwd_win_byts: '32.0'
+  fwd_act_data_pkts: '1.0'
+  fwd_seg_size_min: '20'
+  active_mean: 0.0
+  active_std: 0.0
+  active_max: 0.0
+  active_min: 0.0
+  idle_mean: 0.0
+  idle_std: 0.0
+  idle_max: 0.0
+  idle_min: 0.0

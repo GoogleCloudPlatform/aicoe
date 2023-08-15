@@ -1,0 +1,432 @@
+[
+    {
+        "name": "timestamp",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "entity_type_flows",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "c0",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "flow_id",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "src_ip",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "src_port",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "dst_ip",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "dst_port",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "protocol",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "flow_duration",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "tot_fwd_pkts",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "tot_bwd_pkts",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "totlen_fwd_pkts",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "totlen_bwd_pkts",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "fwd_pkt_len_max",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "fwd_pkt_len_min",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "fwd_pkt_len_mean",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "fwd_pkt_len_std",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "bwd_pkt_len_max",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "bwd_pkt_len_min",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "bwd_pkt_len_mean",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "bwd_pkt_len_std",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "flow_byts_s",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "flow_pkts_s",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "flow_iat_mean",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "flow_iat_std",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "flow_iat_max",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "flow_iat_min",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "fwd_iat_tot",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "fwd_iat_mean",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "fwd_iat_std",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "fwd_iat_max",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "fwd_iat_min",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "bwd_iat_tot",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "bwd_iat_mean",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "bwd_iat_std",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "bwd_iat_max",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "bwd_iat_min",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "fwd_psh_flags",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "bwd_psh_flags",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "fwd_urg_flags",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "bwd_urg_flags",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "fwd_header_len",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "bwd_header_len",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "fwd_pkts_s",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "bwd_pkts_s",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "pkt_len_min",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "pkt_len_max",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "pkt_len_mean",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "pkt_len_std",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "pkt_len_var",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "fin_flag_cnt",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "syn_flag_cnt",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "rst_flag_cnt",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "psh_flag_cnt",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "ack_flag_cnt",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "urg_flag_cnt",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "cwe_flag_cnt",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "ece_flag_cnt",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "down_up_ratio",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "pkt_size_avg",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "fwd_seg_size_avg",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "bwd_seg_size_avg",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "fwd_byts_b_avg",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "fwd_pkts_b_avg",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "fwd_blk_rate_avg",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "bwd_byts_b_avg",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "bwd_pkts_b_avg",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "bwd_blk_rate_avg",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "subflow_fwd_pkts",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "subflow_fwd_byts",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "subflow_bwd_pkts",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "subflow_bwd_byts",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "init_fwd_win_byts",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "init_bwd_win_byts",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "fwd_act_data_pkts",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "fwd_seg_size_min",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "active_mean",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "active_std",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "active_max",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "active_min",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "idle_mean",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "idle_std",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "idle_max",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "idle_min",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "label",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    }
+]

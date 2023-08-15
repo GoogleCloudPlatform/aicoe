@@ -1,0 +1,6 @@
+terraform {
+  backend "gcs" {
+    bucket = "my-tf-state-bucket"
+    prefix = "terraform/bootstrap/state"
+  }
+}

@@ -1,0 +1,45 @@
+#  Copyright 2023 Google LLC
+
+#  Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at
+
+#       https://www.apache.org/licenses/LICENSE-2.0
+
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+
+title: TabularClassification
+description: 'Classification results.
+
+  '
+type: object
+properties:
+  classes:
+    type: array
+    items:
+      type: string
+      enum:
+      - 'Benign'
+      - 'ddos'
+    description: 'The name of the classes being classified, contains all possible
+      values of the target column.
+
+      '
+  scores:
+    type: array
+    items:
+      type: number
+      format: float
+      minimum: 0.0
+      maximum: 1.0
+    description: 'The model''s confidence in each class being correct, higher value
+      means higher confidence. The N-th score corresponds to the N-th class in classes.
+
+      '
+x-batchpredict-csv-classification-labels: classes
+x-batchpredict-csv-classification-scores: scores
+x-target-column-name: label

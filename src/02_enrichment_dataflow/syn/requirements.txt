@@ -1,0 +1,3 @@
+envbash==1.2.0
+google-cloud-pubsub==2.17.1
+pandas==2.0.2
