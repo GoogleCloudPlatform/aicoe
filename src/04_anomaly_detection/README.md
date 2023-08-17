@@ -13,7 +13,7 @@ This sprint demonstrates anomaly detection using FeatureStore and AutoML and Ver
     - [Steps](#steps)
     - [Resources created](#resources-created)
     - [Exit criteria](#exit-criteria)
-  - [Create and deploy an uploaded model](#create-and-deploy-an-uploaded-model)
+  - [Upload an Existing model](#upload-an-existing-model)
     - [Steps](#steps-1)
     - [Resources created](#resources-created-1)
     - [Exit criteria](#exit-criteria-1)
@@ -75,6 +75,9 @@ All sprints
     terraform apply -var-file=terraform.tfvars --auto-approve
     ```
 
+    > **Note**
+    > Terraform populates the templated files with environment specific values to create an instance of files in the `generated` folder.
+
     **Validate**: Terraform finishes successfully.
 
     ```console
@@ -97,9 +100,9 @@ All sprints
 
 - [x] The resources mentioned above are created.
 
-## Create and deploy an uploaded model
+## Upload an Existing model
 
-Create a model from an uploaded exported model (to save time - no need to wait for the training) and deploy to the endpoint.
+Upload an existing model from `ddos_upload_model\model` (to save time - no need to wait for the training) and deploy to the endpoint.
 
 ```Time required: 5-10 mins```
 

@@ -88,6 +88,9 @@ The bootstrap phase initializes the Google Cloud project, terraform state bucket
     terraform apply -var-file=terraform.tfvars --auto-approve
     ```
 
+    > **Note**
+    > Terraform populates the templated files with environment specific values to create an instance of files in the `generated` folder. This applies to all the following sprints.
+
     **Validate**: Terraform finishes successfully.
 
     ```console

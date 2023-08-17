@@ -40,17 +40,19 @@ The labelled numbers (1-6) correspond to the Sprint cycle, each explaining the d
 
 ![HighLevelFlow](images/solacc-highlevel-arch.png)
 
-- [x] Sprint 1 - Realtime Ingestion: [Google Cloud PubSub](https://cloud.google.com/pubsub) is used to stream data in real-time to [BigQuery](https://cloud.google.com/bigquery) using JSON log format
+| Sprint | Description | Cost | Duration |
+|---|---|---|---|
+| 1 | Realtime Ingestion: [Google Cloud PubSub](https://cloud.google.com/pubsub) is used to stream data in real-time to [BigQuery](https://cloud.google.com/bigquery) using JSON log format | $0 | 10mins |
+| 2 | Enrichment: [Dataflow](https://cloud.google.com/dataflow) is used with PubSub to stream data to BigQuery | $0 | 10mins |
+| 3 | Feature Store: Dataflow is used to store data from [Google Cloud Storage](https://cloud.google.com/storage) into [Vertex AI FeatureStore](https://cloud.google.com/vertex-ai) | $10 an hr | 45mins |
+| 4 | Anomaly detection: Anomaly detection is demonstrated using FeatureStore and AutoML and [Vertex AI Model Registry](https://cloud.google.com/vertex-ai/docs/model-registry/introduction) | $10 an hr <sup>1</sup> | 45mins <sup>2</sup> |
+| 5 | BigQueryML: Data stored in BigQuery is leveraged to develop a [BigQueryML model](https://cloud.google.com/bigquery/docs/bqml-introduction) for Anomaly detection | $16 <sup>1</sup> | 20mins |
+| 6 | Visualization: Anomaly detection dashboard is developed using [Looker Studio](https://lookerstudio.google.com) that shows the various data paths and trigger patterns. Custom dashboard can be developed depending on use cases. | $16 <sup>1</sup> | 10mins |
+| X | Clean up of resources from previous sprints | $0 | 20mins |
 
-- [x] Sprint 2 - Enrichment: [Dataflow](https://cloud.google.com/dataflow) is used with PubSub to stream data to BigQuery
+[1] Cost includes the previous sprints
 
-- [x] Sprint 3 - Feature Store: Dataflow is used to store data from [Google Cloud Storage](https://cloud.google.com/storage) into [Vertex AI FeatureStore](https://cloud.google.com/vertex-ai).
-
-- [x] Sprint 4 - Anomaly detection: Anomaly detection is demonstrated using FeatureStore and AutoML and [Vertex AI Model Registry](https://cloud.google.com/vertex-ai/docs/model-registry/introduction)
-
-- [x] Sprint 5 - BigQueryML: Data stored in BigQuery is leveraged to develop a [BigQueryML model](https://cloud.google.com/bigquery/docs/bqml-introduction) for Anomaly detection
-
-- [x] Sprint 6 - Visualization: Anomaly detection dashboard is developed using [Looker Studio](https://lookerstudio.google.com) that shows the various data paths and trigger patterns. Custom dashboard can be developed depending on use cases.
+[2] There is an alternative by developing a model, train and deploy which last for 4 hours
 
 The above journey of data from Log ingestion, enriching logs and inference can be walked through using different data sets.
 
@@ -69,7 +71,7 @@ This is the first step that creates the foundational infrastructure needs for th
 Click [here for instructions](src/00_bootstrap/README.md).
 
 > **Note**
-> This is a mandatory pre-step.
+> Do not skip this step. This step lays down foundational scripts needed to automate the infrastructure provision from Sprints 1 through end.
 
 ### Realtime Ingestion
 
