@@ -56,7 +56,7 @@ All sprints
 2. Install python packages
 
     ```console
-    cd security-analytics-accelerators/src
+    cd security-analytics/src
     pip install -U -r ./03_feature_store/containersec/requirements.txt
     ```
 

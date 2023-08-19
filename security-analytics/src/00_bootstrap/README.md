@@ -54,8 +54,8 @@ The bootstrap phase initializes the Google Cloud project, terraform state bucket
 1. Checkout the code (External)
 
     ```console
-    git clone https://github.com/GoogleCloudPlatform/security-analytics-accelerators.git
-    cd security-analytics-accelerators/src
+    git clone https://github.com/GoogleCloudPlatform/partnereng-solution-accelerators.git
+    cd partnereng-solution-accelerators/security-analytics/src
     ```
 
 2. Authenticate Google Cloud CLI to Google Cloud (gcloud)

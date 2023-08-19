@@ -51,7 +51,7 @@ All sprints
 2. Install python packages
 
 ```console
-cd security-analytics-accelerators/src/
+cd security-analytics/src/
 pip install -U -r ./05_bqml/containersec/requirements.txt
 ```
 

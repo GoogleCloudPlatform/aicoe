@@ -68,7 +68,7 @@ All sprints
     - Change directory
 
         ```console
-        cd security-analytics-accelerators/src
+        cd security-analytics/src
         ```
 
 2. Install python packages

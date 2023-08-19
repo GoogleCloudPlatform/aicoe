@@ -69,7 +69,7 @@ All sprints
 2. Setup infrastructure
 
     ```console
-    cd security-analytics-accelerators/src/04_anomaly_detection
+    cd security-analytics/src/04_anomaly_detection
     terraform init 
     terraform plan -var-file=terraform.tfvars
     terraform apply -var-file=terraform.tfvars --auto-approve
