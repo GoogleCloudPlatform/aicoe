@@ -42,7 +42,7 @@ The Solution Accelerator is developed to create core Google Cloud infrastructure
 
 The labelled numbers (1-6) correspond to the Sprint cycle, each explaining the data journey in great detail.
 
-![HighLevelFlow](security-analytics/images/solacc-highlevel-arch.png)
+![HighLevelFlow](solution-accelerators/security-analytics/images/solacc-highlevel-arch.png)
 
 | Sprint | Description | Cost | Duration |
 |---|---|---|---|
@@ -72,7 +72,7 @@ The above journey of data from Log ingestion, enriching logs and inference can b
 #### Bootstrap
 
 This is the first step that creates the foundational infrastructure needs for the remaining sprints.
-Click [here for instructions](security-analytics/src/00_bootstrap/README.md).
+Click [here for instructions](solution-accelerators/security-analytics/src/00_bootstrap/README.md).
 
 > **Note**
 > Do not skip this step. This step lays down foundational scripts needed to automate the infrastructure provision from Sprints 1 through end.
@@ -80,31 +80,31 @@ Click [here for instructions](security-analytics/src/00_bootstrap/README.md).
 #### Realtime Ingestion
 
 This sprint shows reading data from a file to simulate a real-time experience and ingesting to a Cloud PubSub topic and storing into a BigQuery table. Cloud PubSub to BigQuery ingestion is done via PubSub BigQuery subscription.
-Click [here for instructions](security-analytics/src/01_realtime_ingestion/README.md).
+Click [here for instructions](solution-accelerators/security-analytics/src/01_realtime_ingestion/README.md).
 
 #### Data Enrichment
 
-This sprint shows reading data from a file to simulate a real-time experience and ingesting to a Cloud PubSub topic and storing into a BigQuery table. Cloud PubSub to BigQuery ingestion is done via Dataflow. Dataflow is also doing data enrichment. Click [here for instructions](security-analytics/src/02_enrichment_dataflow/README.md).
+This sprint shows reading data from a file to simulate a real-time experience and ingesting to a Cloud PubSub topic and storing into a BigQuery table. Cloud PubSub to BigQuery ingestion is done via Dataflow. Dataflow is also doing data enrichment. Click [here for instructions](solution-accelerators/security-analytics/src/02_enrichment_dataflow/README.md).
 
 #### Feature Store
 
-This sprint shows a feature engineering platform for Security Analytics. Milestone involve building an enrichment pipeline that reads data from GCS to a Dataflow job that writes to Vertex AI Feature Store. Click [here for instructions](security-analytics/src/03_feature_store/README.md).
+This sprint shows a feature engineering platform for Security Analytics. Milestone involve building an enrichment pipeline that reads data from GCS to a Dataflow job that writes to Vertex AI Feature Store. Click [here for instructions](solution-accelerators/security-analytics/src/03_feature_store/README.md).
 
 #### Anomaly Detection
 
-This sprint demonstrates anomaly detection using FeatureStore and AutoML and Vertex AI Model Registry. Click [here for instructions](security-analytics/src/04_anomaly_detection/README.md).
+This sprint demonstrates anomaly detection using FeatureStore and AutoML and Vertex AI Model Registry. Click [here for instructions](solution-accelerators/security-analytics/src/04_anomaly_detection/README.md).
 
 #### BigQuery ML
 
-This sprint uses data from streaming and batching datasets to train a K-Means model for clustering. Anomaly detection is demonstrated and results are stored in a BigQuery table. All anomalies are alerted using PubSub. Click [here for instructions](security-analytics/src/05_bqml/README.md).
+This sprint uses data from streaming and batching datasets to train a K-Means model for clustering. Anomaly detection is demonstrated and results are stored in a BigQuery table. All anomalies are alerted using PubSub. Click [here for instructions](solution-accelerators/security-analytics/src/05_bqml/README.md).
 
 #### Visualization
 
-This sprint demonstrates a dashboard developed using [Looker Studio](https://lookerstudio.google.com) that shows the various data paths and trigger patterns of Anomaly detection. Click [here for instructions](security-analytics/src/06_visualization/README.md).
+This sprint demonstrates a dashboard developed using [Looker Studio](https://lookerstudio.google.com) that shows the various data paths and trigger patterns of Anomaly detection. Click [here for instructions](solution-accelerators/security-analytics/src/06_visualization/README.md).
 
 #### Cleanup
 
-For resources created and managed by terraform: execute `terraform destroy` in reverse order. For resources created and managed outside of terraform (created by the pipelines and predictions / models): execute the relevant scripts from the `utils` directory. Click [here for instructions](security-analytics/src/07_cleanup/README.md).
+For resources created and managed by terraform: execute `terraform destroy` in reverse order. For resources created and managed outside of terraform (created by the pipelines and predictions / models): execute the relevant scripts from the `utils` directory. Click [here for instructions](solution-accelerators/security-analytics/src/07_cleanup/README.md).
 
 ## Versioning
 
