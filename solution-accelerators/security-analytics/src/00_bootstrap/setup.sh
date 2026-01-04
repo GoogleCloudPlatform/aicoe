@@ -63,9 +63,9 @@ else
 fi
 
 echo -n "Checking terraform state bucket ... "
-gsutil ls $STATE_BUCKET_URL 2>&1 >/dev/null
+gcloud storage ls $STATE_BUCKET_URL 2>&1 >/dev/null
 if [ $? -gt 0 ]; then
-  gsutil mb -p $PROJECT_ID -l $REGION $STATE_BUCKET_URL 2>&1 >/dev/null
+  gcloud storage buckets create $STATE_BUCKET_URL --project $PROJECT_ID --location $REGION 2>&1 >/dev/null
   if [ $? -gt 0 ]; then
     echo "Status: Failed. Reason: Failed to create bucket"
   else
