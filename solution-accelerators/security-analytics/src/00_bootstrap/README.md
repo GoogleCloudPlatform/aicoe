@@ -80,6 +80,9 @@ The bootstrap phase initializes the Google Cloud project, terraform state bucket
     sh setup.sh
     ```
 
+    > **Note**
+    > `setup.sh` verifies that `gs://tf-state-<PROJECT_ID>` belongs to `<PROJECT_ID>` (or creates it with Uniform Bucket-Level Access, Public Access Prevention, and Object Versioning enabled). If that global bucket name is already taken, specify a project-owned bucket name via `STATE_BUCKET=<custom-bucket> sh setup.sh` (or `./setup.sh <PROJECT_ID> <REGION> <ZONE> <STATE_BUCKET>`).
+
 5. Provision the infrastructure using Terraform
 
     ```console
