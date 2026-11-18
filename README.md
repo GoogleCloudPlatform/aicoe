@@ -1,3 +1,7 @@
+![status: inactive](https://img.shields.io/badge/status-inactive-red.svg)
+
+This project is no longer actively developed or maintained.
+
 # Solution Accelerators
 
 This repository contains end-to-end walkthrough of solution to solve a specific technical challenge by accelerating the development and deployment of software components and related documentation. In the first wave, the Solution Accelerator for [Security Analytics](#security-analytics) is released.
