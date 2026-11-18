@@ -132,13 +132,9 @@ else
     --project="${PROJECT_ID}" \
     --location="${REGION}" \
     --uniform-bucket-level-access \
-    --public-access-prevention >/dev/null 2>&1; then
+    --public-access-prevention \
+    --versioning >/dev/null; then
     echo "Status: Failed. Reason: Failed to create or verify ownership of ${STATE_BUCKET_URL} in project ${PROJECT_ID} (bucket name may already be taken globally or permissions are insufficient)." >&2
-    exit 1
-  fi
-
-  if ! gcloud storage buckets update "${STATE_BUCKET_URL}" --versioning >/dev/null 2>&1; then
-    echo "Status: Failed. Reason: Created ${STATE_BUCKET_URL}, but failed to enable object versioning." >&2
     exit 1
   fi
 
